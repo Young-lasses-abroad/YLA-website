@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    
+    <title> Contact Us | YLA </title>
+  </head>
+
+ 
+  
+  <body>
+   
+
+    <div class='top-banner'>
+      <h1>YLA: Young Lasses Abroad</h1>
+    </div>
+
+    <div class='nav-bar'>
+      <div class='nav-bar'>
+        <div class="topnav" id="Topnav">
+          <a href="" class="active">Home</a>
+          <a href="">About Us</a>
+          
+          <div class="dropdown">
+            <button class="dropbtn">North Europe</button>
+            <div class="dropdown-content">
+              <a href="">Reykjavik</a>
+              <a href="">Copenhagen</a>
+              <a href="">Oslo</a>
+            </div>
+          </div> 
+          
+          <div class="dropdown">
+            <button class="dropbtn">East Europe</button>
+            <div class="dropdown-content">
+              <a href="">Riga</a>
+              <a href="">Warsaw</a>
+              <a href="">Budapest</a>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropbtn">South Europe</button>
+            <div class="dropdown-content">
+              <a href="">Lisbon</a>
+              <a href="">Madrid</a>
+              <a href="">Rome</a>
+              <a href="">Santorini</a>
+            </div>
+          </div>
+          
+          <div class="dropdown">
+            <button class="dropbtn">West Europe</button>
+            <div class="dropdown-content">
+              <a href="">Paris</a>
+              <a href="">London</a>
+              <a href="">Dublin</a>
+              <a href="">Amsterdam</a>
+              <a href="">Manchester</a>
+            </div>
+          </div>
+          
+          <a href="">Contact Us</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+        </div>
+  
+        <!-- Javascript function to enable showing the dropdown links for each region-->
+        <script>
+          function myFunction() {
+            var x = document.getElementById("Topnav");
+            if (x.className === "topnav") {
+              x.className += "responsive";
+            } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+    </div>
+    
+    <div class='main-content'>
+      <h2 id="greeting">Drop us a line!</h2><br><br>
+
+      <div id="form-content">
+      <p>If you would like to give any feedback on the destination profiles we have, or if we have missed a destination that you would like to see, please get in touch using the form below and let us know!</p><br><br>
+    
+      <form>
+        <label for="name">Your name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="dob">Your date of birth:</label><br>
+        <input type="text" id="dob" name="dob"><br><br>
+
+        <label for="email">Your email address:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="phone">Your phone number (optional):</label><br>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="region">Select region for destination:</label><br>
+        <select id="regions">
+          <option value="Northern Europe">Northern Europe</option>
+          <option value="Western Europe">Western Europe</option>
+          <option value="Central Europe">Central Europe</option>
+          <option value="Eastern Europe">Eastern Europe</option>
+          <option value="Southern Europe">Southern Europe</option>
+        </select><br><br>
+
+        <label for="destination">Destination:</label><br>
+        <input type="text" id="destination" name="destination"><br><br>
+
+        <label for="message">Your message:</label><br>
+        <textarea name="message" rows="10" cols="30">
+          </textarea><br><br>
+        
+        <input type="radio" id="GDPR" name="GDPR">
+        <p>We may send you personalised communications from time to time. Please check this button if you DO NOT wish to be contacted by us for promotional purposes.</p><br><br>
+
+        <input type="submit" value="Send message" onclick="thankYou()">
+      </form>
+      </div>
+<script>
+  function thankYou(){
+
+    document.title = "Thank you! | YLA";
+
+    var Name = document.getElementById("name");
+
+    document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+
+    document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+  }
+    
+</script>
+
+    </div>
+
+    <div class='nav-footer'>
+      <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
+
+      <div class='footer-links'>
+
+      </div>
+
+      <div class='copyright'>
+        <p>&copy; Young Lasses Abroad (YLA) 2020</p>
+      </div>
+
+      <div class='social-media-links'>
+<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
+<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="50px" Width="50px"  src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
+<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="50px" Width="50px"  src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
+<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="50px" Width="50px"  src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
+<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="50px" Width="50px"  src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
+<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="50px" Width="50px"  src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
+<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="50px" Width="50px"  src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
+
+
+      </div>
+      
+    </div>
+
+
+  </body>
+
+</html>
