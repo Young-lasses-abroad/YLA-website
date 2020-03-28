@@ -19,33 +19,33 @@
       <h1>YLA: Young Lasses Abroad</h1>
     </div>
 
-    <div class='nav-bar'>
-      <div class='nav-bar'>
-        <div class="topnav" id="Topnav">
+    <div class='destination-nav'>
+      <div class='destination-nav'>
+        <div class="top-row" id="top-row">
           <a href="" class="active">Home</a>
           <a href="">About Us</a>
           
-          <div class="dropdown">
-            <button class="dropbtn">North Europe</button>
-            <div class="dropdown-content">
+          <div class="destination-dropdown">
+            <button class="ylabtn">North Europe</button>
+            <div class="destination-dropdown-content">
               <a href="">Reykjavik</a>
               <a href="">Copenhagen</a>
               <a href="">Oslo</a>
             </div>
           </div> 
           
-          <div class="dropdown">
-            <button class="dropbtn">East Europe</button>
-            <div class="dropdown-content">
+          <div class="destination-dropdown">
+            <button class="ylabtn">East Europe</button>
+            <div class="destination-dropdown-content">
               <a href="">Riga</a>
               <a href="">Warsaw</a>
               <a href="">Budapest</a>
             </div>
           </div>
           
-          <div class="dropdown">
-            <button class="dropbtn">South Europe</button>
-            <div class="dropdown-content">
+          <div class="destination-dropdown">
+            <button class="ylabtn">South Europe</button>
+            <div class="destination-dropdown-content">
               <a href="">Lisbon</a>
               <a href="">Madrid</a>
               <a href="">Rome</a>
@@ -53,9 +53,9 @@
             </div>
           </div>
           
-          <div class="dropdown">
-            <button class="dropbtn">West Europe</button>
-            <div class="dropdown-content">
+          <div class="destination-dropdown">
+            <button class="ylabtn">West Europe</button>
+            <div class="destination-dropdown-content">
               <a href="">Paris</a>
               <a href="">London</a>
               <a href="">Dublin</a>
@@ -71,11 +71,11 @@
         <!-- Javascript function to enable showing the dropdown links for each region-->
         <script>
           function myFunction() {
-            var x = document.getElementById("Topnav");
-            if (x.className === "topnav") {
+            var x = document.getElementById("top-row");
+            if (x.className === "top-row") {
               x.className += "responsive";
             } else {
-              x.className = "topnav";
+              x.className = "top-row";
             }
           }
           </script>
