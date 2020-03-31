@@ -24,6 +24,11 @@ map{
     background-color: #33cccc;
 }
 
+fieldset{
+    width: 100%;
+    text-align: center;
+}
+
 body {
   background-color: #33cccc;
 
