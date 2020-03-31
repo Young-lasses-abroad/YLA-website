@@ -3,24 +3,29 @@
 <html>
 
 <head>
+  <title>Rome</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+p, h3, h4, h5{
+text-align: center;
+}
+p  {
+font-size:small;
+}
 
-    <title>Rome</title>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
- 
-
-    <link rel="stylesheet" href="./css/main.css">
-
-    <script src="./social.js" type="text/javascript"></script>
+h5 {
+  font-weight: bold;
+  font-size: medium;
+  
+}
+</style>
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./social.js" type="text/javascript"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -40,127 +45,131 @@
 
 <!--Here we have used a dropdown navigation menu bar which is learned from w3schools, it splits our destinations into dropdown menus for regions alongside our core website pages-->
 
-    <div class='destination-nav'>
+    
 
-      <div class='destination-nav'>
+<div class='destination-nav'>
 
-        <div class="top-row" id="top-row">
+  <div class="top-row" id="top-row">
 
-          <a href="./index.html" class="active">Home</a>
+    <a href="./index.html" class="active">Home</a>
 
-          <a href="./about-us.html">About Us</a>
+    <a href="./about-us.html">About Us</a>
 
-          
+    
 
-          <div class="destination-dropdown">
+    <div class="destination-dropdown">
 
-            <button class="ylabtn">North Europe</button>
+      <button class="ylabtn">North Europe</button>
 
-            <div class="destination-dropdown-content">
+      <div class="destination-dropdown-content">
 
-              <a href="./Reykjavik.html">Reykjavik</a>
+        <a href="./Reykjavik.html">Reykjavik</a>
 
-              <a href="./Copenhagen.html">Copenhagen</a>
+        <a href="./Copenhagen.html">Copenhagen</a>
 
-              <a href="./Oslo.html">Oslo</a>
+        <a href="./Oslo.html">Oslo</a>
 
-            </div>
+      </div>
 
-          </div> 
+    </div> 
 
-          
+    
 
-          <div class="destination-dropdown">
+    <div class="destination-dropdown">
 
-            <button class="ylabtn">East Europe</button>
+      <button class="ylabtn">East Europe</button>
 
-            <div class="destination-dropdown-content">
+      <div class="destination-dropdown-content">
 
-              <a href="./Riga.html">Riga</a>
+        <a href="./Riga.html">Riga</a>
 
-              <a href="./Warsaw.html">Warsaw</a>
+        <a href="./Warsaw.html">Warsaw</a>
 
-              <a href="./Budapest.html">Budapest</a>
+        <a href="./Budapest.html">Budapest</a>
 
-            </div>
-
-          </div>
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">South Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Lisbon.html">Lisbon</a>
-
-              <a href="./Madrid.html">Madrid</a>
-
-              <a href="./Rome.html">Rome</a>
-
-              <a href="./Santorini.html">Santorini</a>
-
-            </div>
-
-          </div>
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">West Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Paris.html">Paris</a>
-
-              <a href="./London.html">London</a>
-
-              <a href="./Dublin.html">Dublin</a>
-
-              <a href="./Amsterdam.html">Amsterdam</a>
-
-              <a href="./Manchester.html">Manchester</a>
-
-            </div>
-
-          </div>
-
-          
-
-          <a href="./contact-us.html">Contact Us</a>
-
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
-
-        </div>
-
-  
-
-        <!-- Javascript function to enable showing the dropdown links for each region-->
-
-        <script>
-
-          function myFunction() {
-
-            var x = document.getElementById("top-row");
-
-            if (x.className === "top-row") {
-
-              x.className += "responsive";
-
-            } else {
-
-              x.className = "top-row";
-
-            }
-
-          }
-
-          </script>
+      </div>
 
     </div>
+
+    
+
+    <div class="destination-dropdown">
+
+      <button class="ylabtn">South Europe</button>
+
+      <div class="destination-dropdown-content">
+
+        <a href="./Lisbon.html">Lisbon</a>
+
+        <a href="./Madrid.html">Madrid</a>
+
+        <a href="./Rome.html">Rome</a>
+
+        <a href="./Santorini.html">Santorini</a>
+
+      </div>
+
+    </div>
+
+    
+
+    <div class="destination-dropdown">
+
+      <button class="ylabtn">West Europe</button>
+
+      <div class="destination-dropdown-content">
+
+        <a href="./Paris.html">Paris</a>
+
+        <a href="./London.html">London</a>
+
+        <a href="./Dublin.html">Dublin</a>
+
+        <a href="./Amsterdam.html">Amsterdam</a>
+
+        <a href="./Manchester.html">Manchester</a>
+
+      </div>
+
+    </div>
+
+    
+
+    <a href="./contact-us.html">Contact Us</a>
+
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+
+  </div>
+
+
+
+  <!-- Javascript function to enable showing the dropdown links for each region-->
+
+  <script>
+
+    function myFunction() {
+
+      var x = document.getElementById("top-row");
+
+      if (x.className === "top-row") {
+
+        x.className += "responsive";
+
+      } else {
+
+        x.className = "top-row";
+
+      }
+
+    }
+
+    </script>
+
+
+
+
+
+</div>
 
   
 
@@ -178,13 +187,9 @@
 
 
 
-<h3>🏙️First things first, whats there do to!?</h3>
-
-
+<h3>🏙️ First thing's first, what's there to do!?</h3>
 
 <p>In Rome you'll be spoilt with stunning architecture and art galleries, whilst not forgetting the amazing Italian food! </p>
-
-
 
 <h4>To narrow it down for you here's our lasses' Top 3...</h4>
 
@@ -291,54 +296,34 @@
 
   
 
-<h3>🚋Secondly, how do you get around to do all these amazing things!?</h3>
-
-<p> We know keeping yourself safe is a top priority when galavanting abroad 
-
-    but have no fear gals, there are plenty of options.
-
-</p>
-
-
+  <h3>🚋 Secondly, how do you get around to do all these amazing things!?</h3>
+  <p> We know keeping yourself safe is a top priority when galavanting abroad 
+      but have no fear gals, there are plenty of options. 
+      We've collected the details about each particular city and what they have to offer!
+  </p>
 
 <h4> Here's our Top 3 recommended ways to get around Rome:</h4>
 
-
-
-<ol type="topthreetransport">
-
-    <li><b> Bicycle </b> </li>
-
-
-
-    <p>The cheapest and most effective to cut out traffic! Look like a local and keep yourself safe with this self-sufficient method of transport.</p>
-
-
-
-    <li><b> Bus </b> </li>
-
+<h5>1. Bicycle</h5>
+<p><br>The cheapest and most effective to cut out traffic!
+  <br> Look like a local and keep yourself safe with this self-sufficient method of transport.</p>
   
 
-    <p>Rome's Public Transit Bus service runs 24/7 and covers the entire city, with multilingual drivers who can advise you on where to go.</p>
-
-
-
-    <li><b> Metro </b> </li>
-
+ <h5>2. Bus</h5>
+<p><br>Rome's Public Transit Bus service runs 24/7 and covers the entire city, 
+  <br>with multilingual drivers who can advise you on where to go.</p>
   
 
-    <p>Finally there is a very frequent and reliable subway service around Rome, also including a train service that takes you directly to Fiumicino airport.</p>
-
-
-
-  </ol>  
+<h5>3. Metro</h5>
+<p><br>Finally there is a very frequent and reliable subway service around Rome, also 
+  <br>including a train service that takes you directly to Fiumicino airport.</p>
 
 
 <h3>🍹Lastly, at the end of a long day sightseeing where do you get a drink!?</h3>
 
 
 
-</div>
+<div>
 
   <p> Since you are on your hols don't worry about what areas to go to for the best 
 
@@ -352,103 +337,58 @@
 
   <h4> Here's our Top 3 areas to go for a boogie:  </h4>
 
-  
+  <h5>Campo de Fiori</h5>
+  <p><br>A popular square in the centre of Rome surrounded by other tourists! 
+    <br>It's a market by day and a bustling hub of bars and nightclubs by the evening!
+      </p>
 
-  <ol type="topthreenightlife">
-
-      <li><b> Campo de Fiori </b> </li>
-
-  
-
-      <p>A popular square in the centre of Rome surrounded by other tourists! It's a market by day and a bustling hub of bars and nightclubs by the evening!</p>
-
-  
-
-      <li><b> Piazza Navona </b> </li>
-
-    
-
-      <p>Piazza Navona is the second central hotspot packed with nightclubs and close to local transport links, for dancing the night away!</p>
+  <h5>Piazza Navona</h5>
+  <p><br>Piazza Navona is the second central hotspot packed with nightclubs 
+    <br>and close to local transport links, for dancing the night away!
+      </p>
+        
+  <h5>Monti</h5>
+  <p><br>Rome's up and coming 'Cool Quarter', loved by locals! You'll find a 
+    <br>young crowd here, exploring cool bars and enjoying live music in the sun.
+  </p>
 
   
-
-      <li><b> Monti </b> </li>
-
-    
-
-      <p>Rome's up and coming 'Cool Quarter', loved by locals! You'll find a young crowd here, exploring cool bars and enjoying live music in the sun.</p>
-
-  
-
-    </ol>  
-
 </div>
 
 <div>
 
-<fieldset>
-
-	<legend>What is your favourite holiday activity?</legend>
-
-	<form= id="Poll" name="Poll-1">
-
-		<label>
-
-      
-
-    <div class="Drinking">
-
+  <fieldset>
+    <legend>What is your favourite holiday activity?</legend>
+    <form= id="Poll" name="Poll-1">
       <label>
-
-        <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
-
-        🍹🍸🍷All the drinks because this lass is on her hols 
-
+        
+      <div class="Drinking">
+        <label>
+          <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
+          🍹🍸🍷 All the drinks because this lass is on her hols 
+        </label>
+         </div>
+  
+       <div class="Sightseeing">
+      <label>
+        <input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
+        🏞️🏰🏙️ Sightseeing because I am a cultural lass
       </label>
-
        </div>
-
-
-
-     <div class="Sightseeing">
-
-		<label>
-
-			<input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
-
-			🏞️🏰🏙️ Sightseeing because I am a cultural lass
-
-    </label>
-
-     </div>
-
-    <div class="Money">
-
-		<label>
-
-			<input type="radio" name="Poll" value="Money" id="Poll_Money" />
-
-			💵💷💶 Spending all my money on touristy tat because I can
-
-    </label>
-
+      <div class="Money">
+      <label>
+        <input type="radio" name="Poll" value="Money" id="Poll_Money" />
+        💵💷💶 Spending all my money on touristy tat because I can
+      </label>
+      </div>
+      <div class="button-for-poll">
+      <input type="button" id="votebutton" value="Vote" onclick="votethanks()">
+  
+      </div>
+  
     </div>
-
-    <div class="button-for-poll">
-
-		<input type="button" name="submit" id="submit" value="Vote" />
-
-	<button>
-
-    Vote
-
-  </button>
-
-    </div>
-
-	 </form>
-
-</fieldset>
+     </form>
+  </fieldset>
 
 
 
