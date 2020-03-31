@@ -9,6 +9,11 @@ map{
     text-align: center;
 }
 
+.destination-nav{
+    width: 100%;
+    text-align: center;
+}
+
 .top-banner {
   background-color: #33cccc;
   text-align: center;
