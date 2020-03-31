@@ -53,5 +53,30 @@ function mouseOutImageTwitter() {
   document.getElementById("twitterBtn").src = "img/twitter.png";
 }
 
+//Modal for quiz//
+var modal = document.getElementById("mymodal");
+
+var btn = document.getElementById("votebutton");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+function votethanks(){
+
+alert('Thanks for your vote lass!');
+}
 
   
