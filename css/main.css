@@ -3,7 +3,7 @@ map{
     display:inline;
 }
 
-.nap-mav{
+#nap-mav{
     width: 100%;
     background-color: #ffffff;
     text-align: center;
@@ -18,17 +18,17 @@ map{
 
 }
 
-.main-content {
+#main-content {
     width: 100%;
     height: 60%;
     text-align: center;
     background-color: #ffffff;
 }
 
-.form-content{
+#form-content{
     width: 100%;
     text-align: center;
-    background-color: #33cccc;
+    background-color: #ffffff;
 }
 
 fieldset{
