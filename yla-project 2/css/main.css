@@ -6,9 +6,16 @@ map{
 .top-banner {
   background-color: #33cccc;
   text-align: center;
-  text-decoration: #f9f9f9;
+  color: #f9f9f9;
+  padding: 50px;
   font-size: 15px;
+
 }
+
+.form-content{
+    text-align: center;
+}
+
 body {
   background-color: #33cccc;
 
@@ -196,6 +203,10 @@ body {
     
         
       }
+
+    /*Style for headings in destinations*/
+    
+
     /*Style for TOP 3 */
     .top-three-to-do
     { color: #000000;
