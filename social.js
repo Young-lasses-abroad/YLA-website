@@ -54,22 +54,22 @@ function mouseOutImageTwitter() {
 }
 
 //JS function for when user submits their details in contact form, it changes page title and heading to say thanks, and pulls their name from the contact form for a personal touch
-      function thankYou(){
+function thankYou() {
       
-      document.title = "Thank you! | YLA";
+document.title = "Thank you! | YLA";
       
-      var Name = document.getElementById("name");
+var Name = document.getElementById("name");
       
-      document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
       
-      document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
-      }
+document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+}
      
 
 
 
 //JS function that we wrote for our 'poll' buttons. On clicking 'Vote' an alert pop up box appears in the browser to thank the user for their vote - so polite :D
-function votethanks(){
+function votethanks() {
 
 alert('Thanks for your vote lass!');
 }
