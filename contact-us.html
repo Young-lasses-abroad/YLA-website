@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <title> Contact Us | YLA </title>
+<head>
+    <title>Contact Us | YLA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./social.js" type="text/javascript"></script>
+
+ <style>
+p, h3, h4, h5{
+  text-align: center;
+}
+p  {
+  font-size:small;
+}
+
+h5 {
+    font-weight: bold;
+    font-size: medium;
     
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+}
+ </style>
+    
+</head>
+
+<body>
+
+  <div class='top-banner'>
+    <h1>YLA: Young Lasses Abroad</h1>
+  </div>
+
+<!--Here we have used a dropdown navigation menu bar which is learned from w3schools, it splits our destinations into dropdown menus for regions alongside our core website pages-->
 
     
-    
-    <script src="./social.js" type="text/javascript">
-  </head>
-
- 
-  
-  <body>
-   
-
-    <div class='top-banner'>
-      <h1>YLA: Young Lasses Abroad</h1>
-    </div>
-
-   <!--Here we have used a dropdown navigation menu bar which is learned from w3schools, it splits our destinations into dropdown menus for regions alongside our core website pages-->
-
-    <div class='destination-nav'>
 
       <div class='destination-nav'>
 
@@ -143,96 +156,86 @@
 
           </script>
 
-    </div>
     
-    <div class='main-content'>
-      <h2 id="greeting">Drop us a line!</h2><br><br>
+  
+  
+<div class='main-content'>
+  <h2 id="greeting">Drop us a line!</h2><br><br>
 
-      <div id="form-content">
-      <p>If you would like to give any feedback on the destination profiles we have, or if we have missed a destination that you would like to see, please get in touch using the form below and let us know!</p><br><br>
+  <div id="form-content">
+  <p>If you would like to give any feedback on the destination profiles we have, or if we have missed a destination that you would like to see, please get in touch using the form below and let us know!</p><br><br>
+
+  <form>
+    <label for="name">Your name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="dob">Your date of birth:</label><br>
+    <input type="text" id="dob" name="dob"><br><br>
+
+    <label for="email">Your email address:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+
+    <label for="phone">Your phone number (optional):</label><br>
+    <input type="text" id="phone" name="phone"><br><br>
+
+    <label for="region">Select region for destination:</label><br>
+    <select id="regions">
+      <option value="Northern Europe">Northern Europe</option>
+      <option value="Western Europe">Western Europe</option>
+      <option value="Central Europe">Central Europe</option>
+      <option value="Eastern Europe">Eastern Europe</option>
+      <option value="Southern Europe">Southern Europe</option>
+    </select><br><br>
+
+    <label for="destination">Destination:</label><br>
+    <input type="text" id="destination" name="destination"><br><br>
+
+    <label for="message">Your message:</label><br>
+    <textarea name="message" rows="10" cols="30">
+      </textarea><br><br>
     
-      <form>
-        <label for="name">Your name:</label><br>
-        <input type="text" id="name" name="name"><br>
+    <input type="radio" id="GDPR" name="GDPR">
+    <p>We may send you personalised communications from time to time. Please check this button if you DO NOT wish to be contacted by us for promotional purposes.</p><br><br>
 
-        <label for="dob">Your date of birth:</label><br>
-        <input type="text" id="dob" name="dob"><br><br>
-
-        <label for="email">Your email address:</label><br>
-        <input type="text" id="email" name="email"><br><br>
-
-        <label for="phone">Your phone number (optional):</label><br>
-        <input type="text" id="phone" name="phone"><br><br>
-
-        <label for="region">Select region for destination:</label><br>
-        <select id="regions">
-          <option value="Northern Europe">Northern Europe</option>
-          <option value="Western Europe">Western Europe</option>
-          <option value="Central Europe">Central Europe</option>
-          <option value="Eastern Europe">Eastern Europe</option>
-          <option value="Southern Europe">Southern Europe</option>
-        </select><br><br>
-
-        <label for="destination">Destination:</label><br>
-        <input type="text" id="destination" name="destination"><br><br>
-
-        <label for="message">Your message:</label><br>
-        <textarea name="message" rows="10" cols="30">
-          </textarea><br><br>
-        
-        <input type="radio" id="GDPR" name="GDPR">
-        <p>We may send you personalised communications from time to time. Please check this button if you DO NOT wish to be contacted by us for promotional purposes.</p><br><br>
-
-        <input type="submit" value="Send message" onclick="thankYou()">
-      </form>
-      </div>
+    <input type="submit" value="Send message" onclick="thankYou()">
+  </form>
+  </div>
+  
 <script>
-  function thankYou(){
+function thankYou(){
 
-    document.title = "Thank you! | YLA";
+document.title = "Thank you! | YLA";
 
-    var Name = document.getElementById("name");
+var Name = document.getElementById("name");
 
-    document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
 
-    document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
-  }
-    
+document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+}
+
 </script>
-
-    </div>
-
-<div class='nav-footer'>
-
-  <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
-
-<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
-
-<br>
-
-<br>
-
-<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
-
-<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
-
-<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
-
-<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
-
-<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
-
-<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
-
-<br>
-
-<br>
-
-<p>&copy; Young Lasses Abroad (YLA) 2020</p>
 
 </div>
 
+<div class='nav-footer'>
+  <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
 
-  </body>
+    
+  
+<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
+<br>
+<br>
+<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
+<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
+<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
+<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
+<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
+<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
+<br>
+<br>
+<p>&copy; Young Lasses Abroad (YLA) 2020</p>
+  
+</div>
 
-</html>
+
+</body>
