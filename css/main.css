@@ -3,6 +3,12 @@ map{
     display:inline;
 }
 
+.nap-mav{
+    width: 100%;
+    background-color: #33cccc;
+    text-align: center;
+}
+
 .top-banner {
   background-color: #33cccc;
   text-align: center;
