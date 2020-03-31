@@ -211,6 +211,20 @@ h5 {
 
 </div>
 
+<script>
+  function thankYou(){
+  
+  document.title = "Thank you! | YLA";
+  
+  var Name = document.getElementById("name");
+  
+  document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+  
+  document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+  }
+  
+  </script>
+
 <div class='nav-footer'>
   <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
 
