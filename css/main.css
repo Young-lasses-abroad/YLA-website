@@ -12,8 +12,16 @@ map{
 
 }
 
-.form-content{
+.main-content{
+    width: 100%;
     text-align: center;
+    background-color: #33cccc;
+}
+
+.form-content{
+    width: 100%;
+    text-align: center;
+    background-color: #33cccc;
 }
 
 body {
@@ -22,6 +30,8 @@ body {
 }
 .destination-nav {
  background-color: #f9f9f9;
+    width: 100%;
+    text-align: center;
 }
 
 .nav-footer {
