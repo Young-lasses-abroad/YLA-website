@@ -74,6 +74,7 @@ window.onclick = function(event) {
   }
 }
 
+//JS function that we wrote for our 'poll' buttons. On clicking 'Vote' an alert pop up box appears in the browser to thank the user for their vote - so polite :D
 function votethanks(){
 
 alert('Thanks for your vote lass!');
