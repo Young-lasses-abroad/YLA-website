@@ -94,6 +94,7 @@ body {
     }
     
     .top-row a {
+        float: left;
         width: 100%;
       display: block;
       color: #f2f2f2;
