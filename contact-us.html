@@ -9,22 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <script src="./social.js" type="text/javascript"></script>
 
- <style>
-p, h3, h4, h5, #greeting {
-  text-align: center;
-}
-p, label  {
-  font-size: medium;
-  color: black;
-}
-
-h5 {
-    font-weight: bold;
-    font-size: medium;
-    
-}
- </style>
- <!-- Javascript functions to enable showing the dropdown links for each region, and for the changing of document objects on submission of contact form-->
+ <!-- Javascript functions enable showing the dropdown links for each region, and for the changing of document objects on submission of contact form-->
 
  <script>
 
@@ -43,18 +28,6 @@ h5 {
     }
 
   }
-
-  function thankYou(){
-
-document.title = "Thank you! | YLA";
-
-var Name = document.getElementById("name");
-
-document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
-
-document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
-}
-
   </script>
     
 </head>
@@ -218,6 +191,19 @@ document.getElementById("form-content").innerHTML = "We will be in touch with yo
  
   </div>
 
+  <script>
+    function thankYou(){
+  
+      document.title = "Thank you! | YLA";
+  
+      var Name = document.getElementById("name");
+  
+      document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+  
+      document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+    }
+      
+  </script>
 
 
 </div>
