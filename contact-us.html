@@ -159,10 +159,12 @@ h5 {
     
   
   
-<div class='main-content'>
-  <h2 id="greeting">Drop us a line!</h2><br><br>
+<div id='main-content'>
+  
 
   <div id="form-content">
+  <h2 id="greeting">Drop us a line!</h2><br><br>
+  
   <p>If you would like to give any feedback on the destination profiles we have, or if we have missed a destination that you would like to see, please get in touch using the form below and let us know!</p><br><br>
 
   <form>
@@ -199,21 +201,23 @@ h5 {
 
     <input type="submit" value="Send message" onclick="thankYou()">
   </form>
+
+  <script>
+    function thankYou(){
+    
+    document.title = "Thank you! | YLA";
+    
+    var Name = document.getElementById("name");
+    
+    document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+    
+    document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+    }
+    
+    </script>
   </div>
-  
-<script>
-function thankYou(){
 
-document.title = "Thank you! | YLA";
 
-var Name = document.getElementById("name");
-
-document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
-
-document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
-}
-
-</script>
 
 </div>
 
