@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warsaw</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <style>
+p, h3, h4, h5{
+  text-align: center;
+}
+p  {
+  font-size:small;
+}
 
+h5 {
+    font-weight: bold;
+    font-size: medium;
+    
+}
+ </style>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./social.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <div class='top-banner'>
+    <h1>YLA: Young Lasses Abroad</h1>
+  </div>
+
+  <div class='destination-nav'>
+    <div class='destination-nav'>
+      <div class="top-row" id="top-row">
+        <a href="" class="active">Home</a>
+        <a href="">About Us</a>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">North Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Reykjavik</a>
+            <a href="">Copenhagen</a>
+            <a href="">Oslo</a>
+          </div>
+        </div> 
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">East Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Riga</a>
+            <a href="">Warsaw</a>
+            <a href="">Budapest</a>
+          </div>
+        </div>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">South Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Lisbon</a>
+            <a href="">Madrid</a>
+            <a href="">Rome</a>
+            <a href="">Santorini</a>
+          </div>
+        </div>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">West Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Paris</a>
+            <a href="">London</a>
+            <a href="">Dublin</a>
+            <a href="">Amsterdam</a>
+            <a href="">Manchester</a>
+          </div>
+        </div>
+        
+        <a href="">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+      </div>
+
+      <!-- Javascript function to enable showing the dropdown links for each region-->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("top-row");
+          if (x.className === "top-row") {
+            x.className += "responsive";
+          } else {
+            x.className = "top-row";
+          }
+        }
+        </script>
+
+</div>
+  
+  
+ <div id="topthree">
+  <h2 id="destinationHeader"></h2>
+  <script>document.getElementById("destinationHeader").innerHTML =
+    "✈️Lass, you're heading to " + document.title + "!";
+ </script>
+ </div>
+
+<h3>🏙️First things first, whats there do to!?</h3>
+
+<p>In Riga theres plenty of things to see and do from the old town & beautiful gardens. </p>
+
+<h4>To narrow it down for you heres our lasses top 3</h4>
+
+  <div class="container">  <!--Apply the Bootstrap CSS to this div as it applies to everything inside it-->
+  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+  
+        <div class="item active">
+          <img src="img/Riga-Nativity Cathedral.jpg" alt="Riga Nativity Cathedral" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Nativity Cathedral</h3>
+            <p>A Orthodox Church with Stunning architecture is a place not to miss in Riga.
+                <br> It also comprises part of Riga’s unique history from the soviet era
+                <br> It’s free to enter- but be nice & pop some cash in the donation box.
+                </p>
+          </div>
+        </div>
+  
+        <div class="item">
+          <img src="img/Riga-Town hall square.jpg" alt="Riga Town Hall Square" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Town Hall Square</h3>
+            <p>Contains some stunning architecture and history that spans from medieval to current day. 
+            <br>House of the blackheads (yes that’s it’s real name😂) is the largest monument in the square. 
+            <br>Be sure to come between Tuesday-Sunday in order to look inside the house. And 
+            <br>contrasting to the bright House of Blackheads, is a small dark Soviet Building that now 
+            <br>contains a museum.  The Roland Statue within the square depicts Lativa’s medieval 
+            <br>privileges. 
+            <br> </p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="img/Warsaw-Lazienki Park.jpg" alt="Warsaw Lazienki Park" style="width:100%;">
+          <div class="carousel-caption">
+            <h3>Lazienki Park</h3>
+            <p>It is Warsaw’s largest park, with the most striking beauty. Escape the stress of city life 
+            <br>and enjoy finding your ‘zen’ here. Lazienki competes favorably with other top parks in the 
+            <br>world. From its central lake and stately residences to an amphitheater and space wide enough 
+            <br>to host popular concerts, Lazienki has plenty to offer. You might even come across elegant 
+            <br>peacocks as you wander through the park. Even on crowded days, finding a quiet spot is easy. </p>
+          </div>
+        </div>
+    
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+<h3>🚋Secondly, how do you get around to do all these amazing things!?</h3>
+<p> We know keeping yourself safe is a top priority when galavanting abroad 
+    but have no fear gals, there are plenty of options.
+    details about particular city and what  they have to offer
+</p>
+
+<h4> Heres our top 3 recommended ways to get around </h4>
+
+
+<h5>1. Electric Bikes</h5>
+<p><br>There’s a few options but my personal favourite is ‘Bolt’ It has an easy smartphone app for 
+<br>unlocking/locking the bikes. It doesn’t come with a helmet- so bring or buy one. I prefer 
+<br>riding round on a scooter to public transport- as you can just stop when you see something.
+</p>
+    
+
+   <h5>2. On Foot </h5>
+<p><br>As nearly a 1/5 of Riga is parks, riga is probably best explored on foot. It’s mostly flat terrain, 
+<br>and it’s not a small city but it’s very compact. Riga is particularly safe, but still take 
+<br>precautions at night! 
+<br></p>
+    
+
+<h5>3. Tram/Metro</h5>
+<p><br>Riga’s tram routes are extensive are a great was to see around the city. They run until 1:00am. 
+<br>They run until 1:00am. 
+<br></p>
+
+
+<div>
+
+<h3>🍹Lastly, at the end of a long day sight seeing where do you get a drink!?</h3>
+
+</div>
+  <p> Since you are on your hols dont worry about what areas to go to for the best 
+      and safest night spots we've got you covered
+  </p>
+  
+  <h4> Heres our top 3 areas to for a boogie</h4>
+  
+<h5>Briana ielg nightlife district</h5>
+<p><br>Home to brew pubs, hip hop clubs and one of the best rock bars. 
+    <br>area, with plenty of offer for a Lass.
+    </p>
+<h5>Aristīda Briāna Street</h5>
+<p><br>Some of Riga’s bars are set in former factories, warehouses, music schools and other 
+    <br>buildings that were originally built for other purposes. 
+    <br>It’s definitely worth checking out Aristīda Briāna Street 
+    <br>where several bars and clubs are located, including a craft brewery!
+    </p>
+
+<h5>Skyline Bar</h5>
+<p><br>Spoil yourself and order a Clavis Riga - the city’s special cocktail - 
+    <br>at Skyline bar located in Radisson Blu Latvija Hotel 
+    <br>offering a full view of the compact city!  
+</p>
+</div>
+<div>
+<fieldset>
+	<legend>What is your favourite holiday activity?</legend>
+	<form= id="Poll" name="Poll-1">
+		<label>
+      
+    <div class="Drinking">
+      <label>
+        <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
+        🍹🍸🍷All the drinks because this lass is on her hols 
+      </label>
+       </div>
+
+     <div class="Sightseeing">
+		<label>
+			<input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
+			🏞️🏰🏙️ Sightseeing because I am a cultural lass
+    </label>
+     </div>
+    <div class="Money">
+		<label>
+			<input type="radio" name="Poll" value="Money" id="Poll_Money" />
+			💵💷💶 Spending all my money on touristy tat because I can
+    </label>
+    </div>
+    <div class="button-for-poll">
+    <input type="button" id="votebutton" value="Vote" onclick="votethanks()">
+
+    </div>
+
+  </div>
+	 </form>
+</fieldset>
+
+
+  <a class="weatherwidget-io" href="https://forecast7.com/en/47d5019d04/budapest/" data-label_1="BUDAPEST" data-label_2="WEATHER" data-theme="pure" >BUDAPEST WEATHER</a>
+  <script>
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
+
+
+<div class='nav-footer'>
+  <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
+
+    
+  
+<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
+<br>
+<br>
+<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
+<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
+<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
+<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
+<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
+<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
+<br>
+<br>
+<p>&copy; Young Lasses Abroad (YLA) 2020</p>
+  
+</div>
+
+
+</body>
