@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Lisbon</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+ 
+
+    <link rel="stylesheet" href="YLA Project/YLA-website-master/yla-project 2/css/main.css">
+
+    <script src="./social.js" type="text/javascript"></script>
+
+</head>
+
+
+
+<body>
+
+
+
+  <div class='top-banner'>
+
+    <h1>YLA: Young Lasses Abroad</h1>
+
+  </div>
+
+
+
+  <div class='destination-nav'>
+
+    <div class='destination-nav'>
+
+      <div class="top-row" id="top-row">
+
+        <a href="" class="active">Home</a>
+
+        <a href="">About Us</a>
+
+        
+
+        <div class="destination-dropdown">
+
+          <button class="ylabtn">North Europe</button>
+
+          <div class="destination-dropdown-content">
+
+            <a href="">Reykjavik</a>
+
+            <a href="">Copenhagen</a>
+
+            <a href="">Oslo</a>
+
+          </div>
+
+        </div> 
+
+        
+
+        <div class="destination-dropdown">
+
+          <button class="ylabtn">East Europe</button>
+
+          <div class="destination-dropdown-content">
+
+            <a href="">Riga</a>
+
+            <a href="">Warsaw</a>
+
+            <a href="">Budapest</a>
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="destination-dropdown">
+
+          <button class="ylabtn">South Europe</button>
+
+          <div class="destination-dropdown-content">
+
+            <a href="">Lisbon</a>
+
+            <a href="">Madrid</a>
+
+            <a href="">Rome</a>
+
+            <a href="">Santorini</a>
+
+          </div>
+
+        </div>
+
+        
+
+        <div class="destination-dropdown">
+
+          <button class="ylabtn">West Europe</button>
+
+          <div class="destination-dropdown-content">
+
+            <a href="">Paris</a>
+
+            <a href="">London</a>
+
+            <a href="">Dublin</a>
+
+            <a href="">Amsterdam</a>
+
+            <a href="">Manchester</a>
+
+          </div>
+
+        </div>
+
+        
+
+        <a href="">Contact Us</a>
+
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+
+      </div>
+
+
+
+      <!-- Javascript function to enable showing the dropdown links for each region-->
+
+      <script>
+
+        function myFunction() {
+
+          var x = document.getElementById("top-row");
+
+          if (x.className === "top-row") {
+
+            x.className += "responsive";
+
+          } else {
+
+            x.className = "top-row";
+
+          }
+
+        }
+
+        </script>
+
+
+
+</div>
+
+  
+
+  
+
+ <div>
+
+  <h2 id="destinationHeader"></h2>
+
+  <script>document.getElementById("destinationHeader").innerHTML =
+
+    "Lass, you're heading to " + document.title + "!";
+
+ </script>
+
+
+
+<h3>🏙️First things first, whats there do to!?</h3>
+
+
+
+<p>Copenhagen is known for it's colourful canals, Michedlin-starred restaurants and for being the capital of the happiest 
+  country in the world.  </p>
+
+
+
+  <h4>To narrow it down for you here's our lasses' Top 3...</h4>
+
+
+  <div class="container">  <!--Apply the Bootstrap CSS to this div as it applies to everything inside it-->
+
+  
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+      </ol>
+
+  
+
+      <!-- Wrapper for slides -->
+
+      <div class="carousel-inner">
+
+  
+
+        <div class="item active">
+
+          <img src="Images/IMG_lisbonviews.jpg" alt="Miradoura Das Portas Do Sol" style="width:100%;">
+
+          <div class="carousel-caption">
+
+            <h3>#1: Miradoura Das Portas Do Sol</h3>
+
+            <p>The breathtaking views over Lisbon can be reached at various points in the city but Miradoura Das Portas Do Sol has the most memorable views
+              of all the roofs, towers and domes across Lisbon.</p>
+
+          </div>
+
+        </div>
+
+  
+
+        <div class="item">
+
+          <img src="Images/IMG_lisbonmetro.jpg" alt="Lisbon Tram" style="width:100%;">
+
+          <div class="carousel-caption">
+
+            <h3>#2: Lisbon Tram</h3>
+
+            <p>Much like the infamous San Francisco tram, the bright yellow Lisbon tram is a highlight of this city. Enjoy an authentic way to travel round the city
+              and make sure to capture some photography of the tram once you get off..</p>
+
+          </div>
+
+        </div>
+
+      
+
+        <div class="item">
+
+          <img src="Images/IMG_lisbonbelem.jpg" alt="Belém Tower" style="width:100%;">
+
+          <div class="carousel-caption">
+
+            <h3>#3: Belém Tower</h3>
+
+            <p>One of the cities most famous landmark is Belém Tower and is a homage to King Manuel's I's reign over Portugal and is a must see when visiting Lisbon.</p>
+
+          </div>
+
+        </div>
+        
+
+  
+
+      <!-- Left and right controls -->
+
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left"></span>
+
+        <span class="sr-only">Previous</span>
+
+      </a>
+
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right"></span>
+
+        <span class="sr-only">Next</span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+  
+
+<h3>🚋Secondly, how do you get around to do all these amazing things!?</h3>
+
+<p> We know keeping yourself safe is a top priority when galavanting abroad 
+
+    but have no fear gals, there are plenty of options.
+
+</p>
+
+
+
+<h4> Here's our Top 3 recommended ways to get around Lisbon:</h4>
+
+<ol type="topthreetransport">
+
+  <li><b> Tram</b> </li>
+
+
+
+  <p>As mentioned before, the Lisbon tram is iconic and and essential mode of tranpsortation to try when in Lisbon.</p>
+
+
+
+  <li><b> Metro</b> </li>
+
+
+
+  <p>The Metro is an alterntative method of transport which is the quickest way of getting from point A to point B, so if you're only here 
+  for a few days, consider using the metro to save yourself time.</p>
+  
+  <li><b> Bus</b> </li>
+
+
+
+  <p>The cheapest method of transport is busses. Although you can easily walk round Lisbon by foot, using public 
+    transport saves you from climbing the steep hills.</p>
+
+
+
+</ol>  
+
+
+<h3>🍹Lastly, at the end of a long day sightseeing where do you get a drink!?</h3>
+
+
+
+</div>
+
+<p> Since you are on your hols don't worry about what areas to go to for the best 
+
+    and safest night spots, we've got you covered!
+
+
+</p>
+
+
+
+<h4> Here's our Top 3 areas to go for a boogie:  </h4>
+
+
+
+<ol type="topthreenightlife">
+
+    <li><b> TBairro Alto </b> </li>
+
+
+
+    <p>Lucky for you, Lisbon is one of the best European cities for a night out. Locals can walk the 
+      streets freely at night with little worry. To start with, you shoudl head over to Barrio Alto, one of the vibrant terraces and best place 
+      to start your evening overlooking the sunset.</p>
+
+
+
+    <li><b> Cais do Sodré </b> </li>
+
+  
+
+    <p>Cais do Sodré is one of the trendiest bars with the most relaxed night scene and widest variety of music being played from indie and electric all the way to reggae and jazz. </p>
+
+
+
+    <li><b> Santos</b> </li>
+
+  
+
+    <p>Santos is where you will find the mainstream music and the venue populated with the younger locals in Lisbon. Located in the docks, a number of restaurants 
+      can also be found near the space. </p>
+
+
+
+  </ol>  
+
+</div>
+
+<div>
+
+<fieldset>
+
+	<legend>What is your favourite holiday activity?</legend>
+
+	<form= id="Poll" name="Poll-1">
+
+		<label>
+
+      
+
+    <div class="Drinking">
+
+      <label>
+
+        <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
+
+        🍹🍸🍷All the drinks because this lass is on her hols 
+
+      </label>
+
+       </div>
+
+
+
+     <div class="Sightseeing">
+
+		<label>
+
+			<input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
+
+			🏞️🏰🏙️ Sightseeing because I am a cultural lass
+
+    </label>
+
+     </div>
+
+    <div class="Money">
+
+		<label>
+
+			<input type="radio" name="Poll" value="Money" id="Poll_Money" />
+
+			💵💷💶 Spending all my money on touristy tat because I can
+
+    </label>
+
+    </div>
+
+    <div class="button-for-poll">
+
+		<input type="button" name="submit" id="submit" value="Vote" />
+
+	<button>
+
+    Vote
+
+  </button>
+
+    </div>
+
+	 </form>
+
+</fieldset>
+
+
+
+
+
+
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/38d72n9d14/lisbon/" data-label_1="LISBON" data-label_2="WEATHER" data-theme="pure" >LISBON WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+
+
+
+
+
+
+<div class='nav-footer'>
+
+  <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
+
+
+
+    
+
+  
+
+<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
+
+<br>
+
+<br>
+
+<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
+
+<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
+
+<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
+
+<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
+
+<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
+
+<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
+
+<br>
+
+<br>
+
+<p>&copy; Young Lasses Abroad (YLA) 2020</p>
+
+  
+
+</div>
+
+
+
+
+
+</body>
