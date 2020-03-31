@@ -53,26 +53,20 @@ function mouseOutImageTwitter() {
   document.getElementById("twitterBtn").src = "img/twitter.png";
 }
 
-//Modal for quiz//
-var modal = document.getElementById("mymodal");
+//JS function for when user submits their details in contact form, it changes page title and heading to say thanks, and pulls their name from the contact form for a personal touch
+      function thankYou(){
+      
+      document.title = "Thank you! | YLA";
+      
+      var Name = document.getElementById("name");
+      
+      document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+      
+      document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+      }
+     
 
-var btn = document.getElementById("votebutton");
 
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 //JS function that we wrote for our 'poll' buttons. On clicking 'Vote' an alert pop up box appears in the browser to thank the user for their vote - so polite :D
 function votethanks(){
