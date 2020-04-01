@@ -1,6 +1,10 @@
 
 map{
     display:inline;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+
 }
 
 .nap-mav {
