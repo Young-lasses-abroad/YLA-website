@@ -26,38 +26,9 @@
 
  <!-- Javascript functions enable showing the dropdown links for each region, and for the changing of document objects on submission of contact form-->
 
- <script>
 
-  function myFunction() {
 
-    var x = document.getElementById("top-row");
-
-    if (x.className === "top-row") {
-
-      x.className += "responsive";
-
-    } else {
-
-      x.className = "top-row";
-
-    }
-
-  }
-
-  function thankYou() {
   
-  document.title = "Thank you! | YLA";
-
-  var Name = document.getElementById("name");
-
-  document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
-
-  document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
-  
-  alert("Thanks for your message lass!");
-}
-
-  </script>
     
 </head>
 
@@ -166,6 +137,24 @@
         </div>
 
   
+       <script>
+
+  function myFunction() {
+
+    var x = document.getElementById("top-row");
+
+    if (x.className === "top-row") {
+
+      x.className += "responsive";
+
+    } else {
+
+      x.className = "top-row";
+
+    }
+
+  }
+          </script>
 
         
 
@@ -223,6 +212,21 @@
 
 </div>
 
+<script>
+function thankYou() {
+  
+  document.title = "Thank you! | YLA";
+
+  var Name = document.getElementById("name");
+
+  document.getElementById("greeting").innerHTML = "Thanks for your message " + Name.value + "!";
+
+  document.getElementById("form-content").innerHTML = "We will be in touch with you soon. Have a great day!";
+  
+  alert("Thanks for your message lass!");
+}
+
+  </script>
 
 
 <div class='nav-footer'>
