@@ -40,6 +40,9 @@ body {
 
 }
 
+fieldset {
+    width: 100%;
+}
 
 .nav-footer {
   background-color:#33cccc ;
