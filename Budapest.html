@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- <style>
-p, h3, h4 {
-  text-align: center;
-}
-p  {
-  font-size:medium;
-}
+<style>
+p, h3, h4, h5{
+        text-align: center;
+      }
+      p  {
+        font-size:small;
+      }
+      
+      h5 {
+          font-weight: bold;
+          font-size: medium;
+          
+      }
  </style>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./social.js" type="text/javascript"></script>
@@ -26,129 +32,69 @@ p  {
     <h1>YLA: Young Lasses Abroad</h1>
   </div>
 
-<!--Here we have used a dropdown navigation menu bar which is learned from w3schools, it splits our destinations into dropdown menus for regions alongside our core website pages-->
-
+  <div class='destination-nav'>
     <div class='destination-nav'>
-
-      <div class='destination-nav'>
-
-        <div class="top-row" id="top-row">
-
-          <a href="./index.html" class="active">Home</a>
-
-          <a href="./about-us.html">About Us</a>
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">North Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Reykjavik.html">Reykjavik</a>
-
-              <a href="./Copenhagen.html">Copenhagen</a>
-
-              <a href="./Oslo.html">Oslo</a>
-
-            </div>
-
-          </div> 
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">East Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Riga.html">Riga</a>
-
-              <a href="./Warsaw.html">Warsaw</a>
-
-              <a href="./Budapest.html">Budapest</a>
-
-            </div>
-
+      <div class="top-row" id="top-row">
+        <a href="" class="active">Home</a>
+        <a href="">About Us</a>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">North Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Reykjavik</a>
+            <a href="">Copenhagen</a>
+            <a href="">Oslo</a>
           </div>
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">South Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Lisbon.html">Lisbon</a>
-
-              <a href="./Madrid.html">Madrid</a>
-
-              <a href="./Rome.html">Rome</a>
-
-              <a href="./Santorini.html">Santorini</a>
-
-            </div>
-
+        </div> 
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">East Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Riga</a>
+            <a href="">Warsaw</a>
+            <a href="">Budapest</a>
           </div>
-
-          
-
-          <div class="destination-dropdown">
-
-            <button class="ylabtn">West Europe</button>
-
-            <div class="destination-dropdown-content">
-
-              <a href="./Paris.html">Paris</a>
-
-              <a href="./London.html">London</a>
-
-              <a href="./Dublin.html">Dublin</a>
-
-              <a href="./Amsterdam.html">Amsterdam</a>
-
-              <a href="./Manchester.html">Manchester</a>
-
-            </div>
-
-          </div>
-
-          
-
-          <a href="./contact-us.html">Contact Us</a>
-
-          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
-
         </div>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">South Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Lisbon</a>
+            <a href="">Madrid</a>
+            <a href="">Rome</a>
+            <a href="">Santorini</a>
+          </div>
+        </div>
+        
+        <div class="destination-dropdown">
+          <button class="ylabtn">West Europe</button>
+          <div class="destination-dropdown-content">
+            <a href="">Paris</a>
+            <a href="">London</a>
+            <a href="">Dublin</a>
+            <a href="">Amsterdam</a>
+            <a href="">Manchester</a>
+          </div>
+        </div>
+        
+        <a href="">Contact Us</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()"></a>
+      </div>
 
-  
-
-        <!-- Javascript function to enable showing the dropdown links for each region-->
-
-        <script>
-
-          function myFunction() {
-
-            var x = document.getElementById("top-row");
-
-            if (x.className === "top-row") {
-
-              x.className += "responsive";
-
-            } else {
-
-              x.className = "top-row";
-
-            }
-
+      <!-- Javascript function to enable showing the dropdown links for each region-->
+      <script>
+        function myFunction() {
+          var x = document.getElementById("top-row");
+          if (x.className === "top-row") {
+            x.className += "responsive";
+          } else {
+            x.className = "top-row";
           }
+        }
+        </script>
 
-          </script>
-
-    </div>
+</div>
+  
   
  <div id="topthree">
   <h2 id="destinationHeader"></h2>
@@ -165,14 +111,6 @@ thermal baths, museums, art galleries. </p>
 <h4>To narrow it down for you heres our lasses top 3</h4>
 
 
-<p>1. Take a dip in a Thermal bath 
-
-  <br>
-
-
-Explore some hungarian food offers at Great Market Hall</p> 
-
-
   <div class="container">  <!--Apply the Bootstrap CSS to this div as it applies to everything inside it-->
   
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -187,26 +125,43 @@ Explore some hungarian food offers at Great Market Hall</p>
       <div class="carousel-inner">
   
         <div class="item active">
-          <img src="img/IMG_budalady.jpeg" alt="Amsterdam Canals" style="width:100%;">
+          <img src="img/IMG_budalady.jpeg" alt="The Budapest Lady" style="width:100%;">
           <div class="carousel-caption">
-            <h3>FIRST THING TO DO</h3>
-            <p>YOUR DESCRIPTION HERE</p>
+            <h3>The Budapest Lady</h3>
+            <p>The lady of Budapest signifies freedom, and looks over both Buda and Pest. I warn
+            <br>you know- it is a climb! I am particularly unfit, forgot a bottle of water and regretted
+            <br>it big time. There is a bus you can get to the top (we didn’t realise until at the top!) 
+            <br>But I would say I’d you can the walk is more than worth it. You get some of the best views 
+            <br>of the city. Treat yo self to a chimney cake on the way back down- you’ve earned it. </p>
           </div>
         </div>
   
         <div class="item">
-          <img src="img/IMG_budamarket.jpeg" alt="Amsterdam Square" style="width:100%;">
+          <img src="img/IMG_budamarket.jpeg" alt="Great Market Hall" style="width:100%;">
           <div class="carousel-caption">
-            <h3>SECOND THING TO DO</h3>
-            <p>YOUR DESCRIPTION HERE</p>
+            <h3>Great Market Hall</h3>
+            <p>This is a Market that has to be seen, smelled & food tasted while your in Budapest. 
+              <br>It has an array of raw produce on the ground floor. Each of which are strangely larger than
+              <br>ours- think tomatoes the side of a tennis ball! Upstairs you will find hot food- be careful 
+              <br>not to go to the tourist traps, not the best food quality or taste. My favourite part was 
+              <br>the lower ground floor, they had a whole floor just for different types of pickles! Ignore
+              <br>the people outside selling fake Gucci scarves, and be wary of pick pocketers. </p>
           </div>
         </div>
       
         <div class="item">
-          <img src="img/IMG_budaspa.jpeg" alt="Van Gogh Museum in Amsterdam" style="width:100%;">
+          <img src="img/IMG_budaspa.jpeg" alt="Széchenyi Medicinal Bath" style="width:100%;">
           <div class="carousel-caption">
-            <h3>THIRD THING TO DO</h3>
-            <p>YOUR DESCRIPTION HERE</p>
+            <h3>The Széchenyi Medicinal Bath</h3>
+            <p>Budapest has a ton of medicinal baths that are still used by locals. And Széchenyi Medicinal 
+              <br>Bath is by far the biggest. It feels like it goes on forever indoors- pools of all different
+              <br>temperatures, steam rooms, and plunge pools are what you can expect as your moving through. 
+              <br>My favourite part was the outdoor pool, it was large with 2 different sides. We went on a Friday
+              <br>& a Saturday. You get a very different vibe here depending on what day/time you go. If your after
+              <br>a more local vibe that is relaxing go early in the morning, on a weekday. If you want a touristy,
+              <br>but fun atmosphere go in the evening on a weekend or a Friday. 
+
+            </p>
           </div>
         </div>
     
@@ -233,130 +188,134 @@ Explore some hungarian food offers at Great Market Hall</p>
   <br>
   <br>
 
-
-
-
-<h3>🚋Secondly, how do you get around to do all these amazing things!?</h3>
-<p> We know keeping yourself safe is a top priority when galavanting abroad 
-    but have no fear gals, there are plenty of options.
-    details about particular city and what  they have to offer
-</p>
-
-<h4> Heres our top 3 recommended ways to get around </h4>
-
-<ol id="list-transport">
-    <li>Lime scootetr </li>
-
-    <p>give the info, why is it safer than anything else</p>
-
-    <li> Trolley </li>
-  
-    <p>give the info </p>
-
-    <li> Tram </li>
-  
-    <p>give the info & why good for girls</p>
-
-  </ol>  
-
-<div>
-
-<h3>🍹Lastly, at the end of a long day sight seeing where do you get a drink!?</h3>
-
-</div>
-  <p> Since you are on your hols dont worry about what areas to go to for the best 
-      and safest night spots we've got you covered
+  <h3>🚋Secondly, how do you get around to do all these amazing things!?</h3>
+  <p> We know keeping yourself safe is a top priority when galavanting abroad 
+      but have no fear gals, there are plenty of options.
       details about particular city and what  they have to offer
   </p>
   
-  <h4> Heres our top 3 areas to for a boogie  </h4>
+  <h4> Heres our top 3 recommended ways to get around </h4>
   
-  <ol>
-      <li>Name of area 1 </li>
   
-      <p>give the info, why is it safer than anything else</p>
-  
-      <li> Name of area 2 </li>
+  <h5>1.Electric Scooter Hire: Lime: </h5>
+  <p><br>There are a few options but my personal favourite is ‘Lime’ It has 
+    <br>an easy smartphone app for unlocking/locking the scooters. The app shows 
+    <br>you where thr scooters are located and how much battery each has. It doesn’t 
+    <br>come with a helmet- so bring or buy one. I prefer riding round on a scooter 
+    <br>to public transport- as you can just stop when you see something of interest to you.
+  </p>
     
-      <p>give the info , why good for girls</p>
   
-      <li>Name of area 3 </li>
-    
-      <p>give the info & why good for girls</p>
-  
-    </ol>  
-<br>
-</div>
-<div>
-<fieldset>
-	<legend>What is your favourite holiday activity?</legend>
-	<form= id="Poll" name="Poll-1">
-		<label>
+     <h5>2. Taxi: Bolt </h5>
+  <p><br>Bolt taxi is very similar to uber- location by phone and ordering on the app. 
+    <br> Make sure to download the app before you go on holiday to familiarise yourself 
+    <br> with how it works, Bolt is safer than using public transport at night and is a convenience during the day. 
+  </p>
       
-    <div class="Drinking">
+  
+  <h5>3. Trolley </h5>
+  <p>The trolley’s in Budapest are very cool. They are cover most of the city, 
+  <br>and give you the experience of seeing the full city from an older method of transport. 
+  <br>Following the route of tram number 2 all the way around gives you the best view of a 
+  <br>lot of tourist spots. So if you don’t have a lot of time and want to cover it all this 
+  <br>is a good option. </p>
+  
+  
+  <div>
+  
+  <h3>🍹Lastly, at the end of a long day sight seeing where do you get a drink!?</h3>
+  
+  </div>
+    <p> Since you are on your hols dont worry about what areas to go to for the best 
+        and safest night spots we've got you covered
+    </p>
+    
+    <h4> Heres our top 3 areas to for a boogie</h4>
+    
+  <h5>Gozsdu Udvar</h5>
+  <p><br>Gozsdue Court is open to visitors all night. Its passages and alleyways are 
+    <br>packed with bars and great restaurants, serving high quality foods and drinks for
+    <br>guests. A host of wine bars, cafes, wok and tapas bars and pizzerias offer
+    <br>tempting treats to suit all tastes. It’s worth checking out the entertainment 
+    <br>in the bars, too, as many DJs regularly perform in Gozsdu! Gozsdu was a lot of fun! 
+    <br>Get here on a weekend or Friday night to see It as its best. 
+      </p>
+
+  <h5>Kazinczy Street</h5>
+  <p><br>Szimpla Kert is the oldest ruin pub in the area. Ruin pubs/bars are old buildings
+    <br>that are rented and turned into pubs, with their interiors decorated with an eccentric
+    <br>array of vintage furnishings. It’s definitely worth a look, but is now ,very touristy 
+    <br>so if your looking for a more local experience head to one of the many cheaper cocktail/bars.
+    <br>There are multiple clubs to dance all night here, and in the adjacent streets. 
+
+  <h5>The Embankment</h5>
+  <p><br>For a more chilled night out, with open-air venues hosting live music head to district 
+  <br>9 on the Embankment. There are varyhing styles and genres of live music so check ahead for what
+  <br>you want to see. One of the best places to get Craft Beer is within this district. Also a local
+  <br>Jazz bar which is always happening. 
+  </p>
+  </div>
+  
+  <div>
+  <fieldset>
+    <legend>What is your favourite holiday activity?</legend>
+    <form= id="Poll" name="Poll-1">
       <label>
-        <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
-        🍹🍸🍷All the drinks because this lass is on her hols 
+        
+      <div class="Drinking">
+        <label>
+          <input type="radio" name="Poll" value="Drinking" id="Poll_Drinking" />
+          🍹🍸🍷All the drinks because this lass is on her hols 
+        </label>
+         </div>
+  
+       <div class="Sightseeing">
+      <label>
+        <input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
+        🏞️🏰🏙️ Sightseeing because I am a cultural lass
       </label>
        </div>
-
-     <div class="Sightseeing">
-		<label>
-			<input type="radio" name="Poll" value="Sightseeing" id="Poll_Sightseeing" />
-			🏞️🏰🏙️ Sightseeing because I am a cultural lass
-    </label>
-     </div>
-    <div class="Money">
-		<label>
-			<input type="radio" name="Poll" value="Money" id="Poll_Money" />
-			💵💷💶 Spending all my money on touristy tat because I can
-    </label>
+      <div class="Money">
+      <label>
+        <input type="radio" name="Poll" value="Money" id="Poll_Money" />
+        💵💷💶 Spending all my money on touristy tat because I can
+      </label>
+      </div>
+      <div class="button-for-poll">
+      <input type="button" id="votebutton" value="Vote" onclick="votethanks()">
+  
+      </div>
+  
     </div>
-    <div class="button-for-poll">
-    <input type="button" id="votebutton" value="Vote" onclick="votethanks()">
-
-    </div>
-
+     </form>
+  </fieldset>
+  
+  
+    <a class="weatherwidget-io" href="https://forecast7.com/en/47d5019d04/budapest/" data-label_1="BUDAPEST" data-label_2="WEATHER" data-theme="pure" >BUDAPEST WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
+  
+  
+  <div class='nav-footer'>
+    <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
+  
+      
+    
+  <!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
+  <br>
+  <br>
+  <a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
+  <a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
+  <a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
+  <a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
+  <a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
+  <a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
+  <br>
+  <br>
+  <p>&copy; Young Lasses Abroad (YLA) 2020</p>
+    
   </div>
-	 </form>
-</fieldset>
-
-
-  <a class="weatherwidget-io" href="https://forecast7.com/en/47d5019d04/budapest/" data-label_1="BUDAPEST" data-label_2="WEATHER" data-theme="pure" >BUDAPEST WEATHER</a>
-  <script>
-  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-  </script>
-
-
-<div class='nav-footer'>
-
-  <marquee behavior="scroll" direction="left">Join the YLA movement! Connect with us on social media</marquee>
-
-<!--target = _blank opens a new page in browser. We have no YLA social media accounts so have just used links for the websites of all of these platforms!-->
-
-<br>
-
-<br>
-
-<a href="https://en-gb.facebook.com/" target="_blank"><img id="facebookBtn" alt="YLA Facebook page" Height="30px" Width="30px" hspace="10" src="img/facebook.png" onmouseover ="mouseOverImageFacebook()"  onmouseout="mouseOutImageFacebook()"/></a>
-
-<a href="https://www.instagram.com/" target="_blank"><img id="instagramBtn" alt="YLA Instagram page" Height="30px" Width="30px" hspace="10" src="img/instagram.png" onmouseover ="mouseOverImageInstagram()"  onmouseout="mouseOutImageInstagram()"/></a>
-
-<a href="https://www.linkedin.com/" target="_blank"><img id="linkedinBtn" alt="YLA LinkedIn page" Height="30px" Width="30px" hspace="10" src="img/linkedin.png" onmouseover ="mouseOverImageLinkedin()"  onmouseout="mouseOutImageLinkedin()"/></a>
-
-<a href="https://www.pinterest.co.uk/" target="_blank"><img id="pinterestBtn" alt="YLA Pinterest page" Height="30px" Width="30px" hspace="10" src="img/pinterest.png" onmouseover ="mouseOverImagePinterest()"  onmouseout="mouseOutImagePinterest()"/></a>
-
-<a href="https://www.snapchat.com/" target="_blank"><img id="snapchatBtn" alt="YLA Snapchat page" Height="30px" Width="30px" hspace="10" src="img/snapchat.png" onmouseover ="mouseOverImageSnapchat()"  onmouseout="mouseOutImageSnapchat()"/></a>
-
-<a href="https://www.twitter.com/" target="_blank"><img id="twitterBtn" alt="YLA Twitter page" Height="30px" Width="30px" hspace="10" src="img/twitter.png" onmouseover ="mouseOverImageTwitter()"  onmouseout="mouseOutImageTwitter()"/></a>
-
-<br>
-
-<br>
-
-<p>&copy; Young Lasses Abroad (YLA) 2020</p>
-
-</div>
-
-
-</body>
+  
+  
+  </body>
