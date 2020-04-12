@@ -44,10 +44,7 @@ fieldset{
     width: 100%;
 }
 
-legend{
-     text-align: center;
-    color: #FFFFFF;
-}
+
 
 body {
   background-color: #33cccc;
@@ -218,9 +215,11 @@ body {
         padding: 4px 6px 4px 6px;
         border: 1px solid ;
         font-size: 2.0em;
-        color: #3cc4d3;
         font-style: italic;
+          text-align: center;
+    color: #FFFFFF;
       }
+        
       fieldset {
         margin: 115px auto;
         width: 400px;
