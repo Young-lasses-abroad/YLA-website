@@ -8,17 +8,6 @@ map{
 
 }
 
-legend {
-    width: 100%;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-fieldset {
-    width: 100%;
-    text-align: center;
-}
-
 .nap-mav {
     width: 100%;
     padding: 10px;
@@ -217,13 +206,14 @@ body {
       color: #f2f2f2;
    
       legend {
+        text-align: center;
+        color: #FFFFFF;
+        width: 100%;
         padding: 4px 6px 4px 6px;
         border: 1px solid ;
         font-size: 2.0em;
         font-style: italic;
-        text-align: center;
-        color: #FFFFFF;
-          width: 100%;
+        
       }
         
       fieldset {
