@@ -210,14 +210,15 @@ body {
         border: 1px solid ;
         font-size: 2.0em;
         font-style: italic;
-          text-align: center;
-    color: #FFFFFF;
+        text-align: center;
+        color: #FFFFFF;
+          width: 100%;
       }
         
       fieldset {
         margin: 115px auto;
         width: 100%;
-          text-align: center;
+        text-align: center;
         border: 1px #3cc4d3
         }
 
