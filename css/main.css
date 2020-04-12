@@ -45,6 +45,7 @@ body {
 }
 
 .nav-footer {
+    padding-top: 10px;
   background-color:#33cccc ;
 font-size: small;
 text-align: center;
