@@ -40,12 +40,6 @@ map{
     background-color: #ffffff;
 }
 
-fieldset{
-    width: 100%;
-}
-
-
-
 body {
   background-color: #33cccc;
 
@@ -222,7 +216,8 @@ body {
         
       fieldset {
         margin: 115px auto;
-        width: 400px;
+        width: 100%;
+          text-align: center;
         border: 1px #3cc4d3
         }
 
