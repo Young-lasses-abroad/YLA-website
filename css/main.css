@@ -86,8 +86,8 @@ body {
     }
     
     .top-row {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 10%;
+        padding-right: 10%;
       overflow: hidden;
       background-color: #33cccc;
     }
